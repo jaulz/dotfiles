@@ -166,7 +166,10 @@ chflags nohidden ~/Library
 ###############################################################################
 
 # Set the icon size of Dock items
-defaults write com.apple.dock tilesize -int 30
+defaults write com.apple.dock tilesize -int 45
+
+# Set the Dock to the left side
+defaults write com.apple.dock "orientation" -string "left"
 
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.15
