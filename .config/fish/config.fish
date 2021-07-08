@@ -3,6 +3,7 @@
 
 # Extend user path
 set -U fish_user_paths ~/Library/Python/3.8/bin/ $fish_user_paths
+set -U fish_user_paths /opt/homebrew/opt/php/bin/ $fish_user_paths
 
 # Include powerline 
 # set fish_function_path "~/Library/Python/3.8/lib/python/site-packages/powerline/fish" $fish_function_path
@@ -19,7 +20,7 @@ end
 set -g theme_color_scheme nord
 set -g theme_display_git yes
 set -g theme_display_git_dirty yes
-set -g theme_display_git_untracked no
+set -g theme_display_git_untracked yes
 set -g theme_display_git_ahead_verbose yes
 set -g theme_display_git_dirty_verbose yes
 set -g theme_display_git_stashed_verbose yes
