@@ -1,0 +1,74 @@
+[aws]
+symbol = "  "
+disabled = true
+
+[battery]
+disabled = true
+full_symbol = " "
+charging_symbol = " "
+discharging_symbol = " "
+
+[cmd_duration]
+style = "yellow"
+format = "[$duration]($style) "
+
+[conda]
+symbol = " "
+
+[directory]
+style = "bold blue"
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[env_var]
+variable = "ENV"
+style = "dimmed blue"
+format = "ENV=[$env_value]($style) "
+
+[git_branch]
+symbol = " "
+style = "dimmed white"
+
+[git_status]
+style = "dimmed white"
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+
+[golang]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[package]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+style = "yellow"
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
