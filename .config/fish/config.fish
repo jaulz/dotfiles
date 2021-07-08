@@ -1,6 +1,9 @@
 # Path to Oh My Fish install.
 set -gx OMF_PATH $HOME/.local/share/omf
 
+# Extend path
+set -U fish_user_paths ~/Library/Python/3.8/bin/ $fish_user_paths
+
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
 
