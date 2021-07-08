@@ -41,7 +41,7 @@ else
 fi
 
 # Allow history search via up/down keys.
-source ${share_path}/history-substring-search/zsh-history-substring-search.zsh
+source ${share_path}/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
 
@@ -125,3 +125,6 @@ export COMPOSER_MEMORY_LIMIT=-1
 #}
 #shopt -s extdebug
 #trap prod_command_trap DEBUG
+
+# Load starship
+eval "$(starship init zsh)"
