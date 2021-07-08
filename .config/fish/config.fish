@@ -8,5 +8,5 @@ source $OMF_PATH/init.fish
 if status is-interactive
 end
 
-# Load starship
-starship init fish | source
+# Use nerd fonts
+set -g theme_nerd_fonts yes
