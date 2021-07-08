@@ -1,19 +1,24 @@
 # Path to Oh My Fish install.
-set -gx OMF_PATH $HOME/.local/share/omf
+# set -gx OMF_PATH $HOME/omf
 
-# Extend path
+# Extend user path
 set -U fish_user_paths ~/Library/Python/3.8/bin/ $fish_user_paths
 
+# Include powerline 
+# set fish_function_path "~/Library/Python/3.8/lib/python/site-packages/powerline/fish" $fish_function_path
+# powerline-setup
+
 # Load oh-my-fish configuration.
-source $OMF_PATH/init.fish
+# source $OMF_PATH/init.fish
 
 # Commands to run in interactive sessions can go here
 if status is-interactive
 end
 
-# Adjust bobthefish
-set -g theme_display_git no
-set -g theme_display_git_dirty no
+# Adjust bobthefish (see https://github.com/oh-my-fish/theme-bobthefish)
+set -g theme_color_scheme nord
+set -g theme_display_git yes
+set -g theme_display_git_dirty yes
 set -g theme_display_git_untracked no
 set -g theme_display_git_ahead_verbose yes
 set -g theme_display_git_dirty_verbose yes
@@ -42,7 +47,7 @@ set -g theme_title_use_abbreviated_path no
 set -g theme_date_format "+%a %H:%M"
 set -g theme_date_timezone America/Los_Angeles
 set -g theme_avoid_ambiguous_glyphs yes
-set -g theme_powerline_fonts no
+set -g theme_powerline_fonts yes
 set -g theme_nerd_fonts yes
 set -g theme_show_exit_status yes
 set -g theme_display_jobs_verbose yes
