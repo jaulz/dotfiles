@@ -125,6 +125,3 @@ export COMPOSER_MEMORY_LIMIT=-1
 #}
 #shopt -s extdebug
 #trap prod_command_trap DEBUG
-
-# Load starship
-eval "$(starship init zsh)"
